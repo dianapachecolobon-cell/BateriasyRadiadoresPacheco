@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baterias y Radiadores Pacheco</title>
+  <link rel="stylesheet" href="estilosContacto.css" />
+</head>
+<body>
+
+  <!-- NAV SUPERIOR -->
+  <div class="top-nav">
+    <div class="logo">
+      <img src="img/logo.jpg" alt="logo" height="50" />
+    </div>
+    <div class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="Nosotros.html">Nosotros</a>
+      <a href="Contacto.html">Contacto</a>
+      <a href="Catalogo.html">Catálogo <span class="flecha"></span></a>
+    </div>
+    <div class="icons">
+      
+
+    </div>
+  </div>
+
+  <!-- BUSCADOR DE BATERÍA -->
+  <div class="battery-search">
+    <div class="rojo">Selecciona tu batería</div>
+    <div class="gris flecha">Por Categoría</div>
+    <div class="gris flecha">Por marca</div>
+    <div class="rojo flecha">Buscar por modelo y año</div>
+  </div>
+
+</body>
+
+
+
+<div class="seccion-nosotros">
+  <div class="bloque-negro">
+    <span class="barra-roja"></span>
+    <h2 class="titulo-nosotros">CONTACTO</h2>
+  </div>
+  <div class="lineas-dorado">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+
+
+<section class="contacto-container">
+  <!-- 📍 MAPA -->
+  <div class="mapa">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.480194907938!2d-77.09077702418337!3d-12.01042668822352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce902d1fa3f7%3A0x68fef154f186d5e0!2sRadiadores%20Venta%20Y%20Servico%20%22%20Pacheco%20%22!5e0!3m2!1ses!2spe!4v1754505023554!5m2!1ses!2spe"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- 📝 FORMULARIO -->
+  <div class="formulario">
+    <form onsubmit="enviarWhatsApp(); return false;">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="telefono" placeholder="Teléfono" required>
+      <input type="text" id="distrito" placeholder="Distrito" required>
+
+      <p class="separador">Datos del Vehículo</p>
+
+      <input type="text" id="marca" placeholder="Marca" required>
+      <input type="text" id="modelo" placeholder="Modelo" required>
+      <input type="text" id="anio" placeholder="Año" class="input-pequeno" required>
+
+      <button type="submit">Todo dato ingresado sera enviado directamente a Whatsapp</button>
+    </form>
+  </div>
+</section>
+
+<!-- 📱 SCRIPT PARA WHATSAPP -->
+<script>
+  function enviarWhatsApp() {
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var telefono = document.getElementById("telefono").value;
+    var distrito = document.getElementById("distrito").value;
+    var marca = document.getElementById("marca").value;
+    var modelo = document.getElementById("modelo").value;
+    var anio = document.getElementById("anio").value;
+
+    var mensaje = `Hola, deseo una cotización:\n\n` +
+                  ` *Nombre:* ${nombre}\n *Email:* ${email}\n *Teléfono:* ${telefono}\n *Distrito:* ${distrito}\n\n *Marca:* ${marca}\n *Modelo:* ${modelo}\n *Año:* ${anio}`;
+
+    var numero = "51917369603"; // ← Cambia esto por tu número real
+    var url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <!-- FOOTER -->
+  <footer class="footer-mundo">
+    <div class="footer-container">
+
+      <!-- LOGO + DESCRIPCIÓN -->
+      <div class="footer-col">
+        <img src="img/logo.jpg" alt="BATERIAS Y RADIADORES PACHECO" class="logo-footer" />
+        <p class="descripcion">
+          Nos especializamos en la venta y de baterías y radiadores para todo tipo de vehículos.
+        </p>
+      </div>
+
+      <!-- ENLACES -->
+      <div class="footer-col">
+        <h4>ENLACES</h4>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-angle-double-right"></i> Inicio</a></li>
+          <li><a href="Nosotros.html"><i class="fas fa-angle-double-right"></i> Nosotros</a></li>
+          <li><a href="Contacto.html"><i class="fas fa-angle-double-right"></i> Contacto</a></li>
+          <li><a href="Catalogo.html"><i class="fas fa-angle-double-right"></i> Catalogo</a></li>
+        </ul>
+        <a href="#" class="footer-link">LIBRO DE RECLAMACIONES</a>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="footer-col">
+        <h4>CONTACTO</h4>
+        <p><strong>PUNTO DE VENTA</strong> AA.HH  Pan con libertad mz D lote 4  SMP</p>
+        <p>+51 917 369 603</p>
+        <p>Radiadorespacheco148@gmail.com</p>
+        <a href="#" class="footer-link">TÉRMINOS Y CONDICIONES</a>
+      </div>
+
+      <!-- SÍGUENOS -->
+      <!-- SÍGUENOS CON IMÁGENES -->
+       <div class="footer-col">
+        
+        <div class="social-icons-img">
+
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+<!-- AVISO LEGAL FINAL -->
+<div class="footer-legal">
+  <p>
+    <span class="marca">Baterias y Radiadores Pacheco</span> pertenece a <strong>Todos los derechos reservados.</strong> 
+    Precios sujetos a variaciones sin previo aviso. 
+    Productos sujetos a disponibilidad de stock al momento de la compra.
+  </p>
+  <p class="envio">Despacho de producto se realizará una vez confirmada la compra.</p>
+</div>
+
+
+<a href="https://wa.me/51917369603" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Escríbenos por WhatsApp">
+  <img src="img/whatsapp.png" alt="WhatsApp" />
+</a>
+
+</html>
